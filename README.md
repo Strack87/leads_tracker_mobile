@@ -1,22 +1,41 @@
 # Leads Tracker Mobile
 
-## Overview
-Leads Tracker Mobile is a mobile-friendly web application designed to help users track and manage their leads. The app allows users to add, view, and delete leads, providing a simple and efficient way to keep track of potential clients or contacts. The app is built using HTML, CSS, and JavaScript, and it integrates with a Firebase database for data storage.
+A simple web application to track and manage leads using Firebase Realtime Database. This project allows users to save, display, and delete URLs.
 
 ## Features
-- **Add Leads**: Users can add new leads by entering a URL.
-- **View Leads**: Users can view a list of all saved leads.
-- **Delete Leads**: Users can delete all saved leads with a single click.
-- **Mobile-Friendly**: The app is designed to be responsive and work well on mobile devices.
 
-## Usage
-1. **Add a Lead**: Enter a URL in the input field and click the "Save Lead" button to add the lead to the list.
-2. **View Leads**: The list of saved leads will be displayed below the input field.
-3. **Delete Leads**: Click the "Delete All Leads" button to remove all saved leads from the list.
+- Save URLs
+- Display saved URLs
+- Delete all saved URLs
 
 ## Setup
-1. **Clone the Repository**: Clone the project repository to your local machine.
-   ```bash
-   git clone https://github.com/your-username/leads_tracker_mobile.git
-   
-2. **Install Dependencies**: Navigate to the project directory and install the required dependencies.
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/leads_tracker_mobile.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd leads_tracker_mobile
+    ```
+3. Open `index.html` in your preferred web browser.
+
+## Configuration
+
+1. Create a Firebase project and obtain your Firebase Realtime Database URL.
+2. Replace `process.env.DATABASE_URL` in `index.js` with your Firebase Realtime Database URL:
+    ```javascript
+    const firebaseConfig = {
+        databaseURL: "YOUR_FIREBASE_DATABASE_URL"
+    }
+    ```
+
+## Usage
+
+1. Enter a URL in the input field and click "SAVE INPUT" to save the URL.
+2. The saved URLs will be displayed in a list.
+3. Double-click the "DELETE ALL" button to remove all saved URLs.
+
+## License
+
+This project is licensed under the MIT License.
